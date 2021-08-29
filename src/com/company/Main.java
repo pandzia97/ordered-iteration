@@ -10,8 +10,14 @@ public class Main {
         int numberOne = scanner.nextInt();
         int numberTwo = scanner.nextInt();
 
-        for (int i = numberOne; i <= numberTwo; i++) {
-            System.out.println(i);
+        if (numberOne < numberTwo) {
+            for (int i = numberOne; i <= numberTwo; i++) {
+                System.out.println(i);
+            }
+        } else {
+            for (int i = numberTwo; i <= numberOne; i++) {
+                System.out.println(i);
+            }
         }
     }
 }
