@@ -12,17 +12,15 @@ public class Main {
         System.out.println("Enter number for modulo: ");
         int numberModulo = scanner.nextInt();
 
-        if (numberOne < numberTwo) {
-            for (int i = numberOne; i <= numberTwo; i++) {
-                if (i % numberModulo == 0) {
-                    System.out.println(i);
-                }
-            }
-        } else {
-            for (int i = numberOne; i >= numberTwo; i--) {
-                if (i % numberModulo == 0) {
-                    System.out.println(i);
-                }
+        if (numberOne > numberTwo) {
+            int tmp = numberTwo;
+            numberTwo = numberOne;
+            numberOne = tmp;
+        }
+
+        for (int i = numberOne; i <= numberTwo; i++) {
+            if (i % numberModulo == 0 && i % 2 == 1) {
+                System.out.println(i);
             }
         }
     }
