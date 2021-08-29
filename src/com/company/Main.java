@@ -9,16 +9,18 @@ public class Main {
         System.out.println("Enter two number: ");
         int numberOne = scanner.nextInt();
         int numberTwo = scanner.nextInt();
+        System.out.println("Enter number for modulo: ");
+        int numberModulo = scanner.nextInt();
 
         if (numberOne < numberTwo) {
             for (int i = numberOne; i <= numberTwo; i++) {
-                if (i % 3 == 0) {
+                if (i % numberModulo == 0) {
                     System.out.println(i);
                 }
             }
         } else {
             for (int i = numberOne; i >= numberTwo; i--) {
-                if (i % 3 == 0) {
+                if (i % numberModulo == 0) {
                     System.out.println(i);
                 }
             }
