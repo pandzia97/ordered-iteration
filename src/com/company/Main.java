@@ -12,11 +12,15 @@ public class Main {
 
         if (numberOne < numberTwo) {
             for (int i = numberOne; i <= numberTwo; i++) {
-                System.out.println(i);
+                if (i % 3 == 0) {
+                    System.out.println(i);
+                }
             }
         } else {
-            for (int i = numberTwo; i <= numberOne; i++) {
-                System.out.println(i);
+            for (int i = numberOne; i >= numberTwo; i--) {
+                if (i % 3 == 0) {
+                    System.out.println(i);
+                }
             }
         }
     }
