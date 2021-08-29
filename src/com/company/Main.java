@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("podaj 2 liczby ");
+        System.out.println("Enter two number: ");
         int numberOne = scanner.nextInt();
         int numberTwo = scanner.nextInt();
 
